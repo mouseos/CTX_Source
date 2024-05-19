@@ -18,6 +18,7 @@ ccflags-y += -I$(srctree)/drivers/misc/mediatek/include/mt-plat/$(MTK_PLATFORM)/
 ccflags-y += -I$(srctree)/drivers/watchdog/mediatek/include/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/dramc/$(MTK_PLATFORM)/
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/base/power/$(CONFIG_MTK_PLATFORM)/
+ccflags-y += -I$(srctree)/drivers/devfreq/
 
 ifeq ($(CONFIG_MTK_QOS_SUPPORT), y)
 obj-$(CONFIG_MACH_MT8168) += helio-dvfsrc-opp.o helio-dvfsrc-sysfs.o

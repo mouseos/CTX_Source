@@ -36,8 +36,8 @@ jobs:
         run: |
           export ARCH=arm64
           export CROSS_COMPILE=$(pwd)/gcc-linaro-5.5.0-2017.10-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-
-          make a05bd_defconfig MAKEFLAGS=-w
-          make -j2　MAKEFLAGS=-w
+          make a05bd_defconfig
+          make -j2
 
       - name: Upload
         uses: actions/upload-artifact@v4
